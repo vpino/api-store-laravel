@@ -8,10 +8,12 @@
  * Controller of the apiFrontApp
  */
 angular.module('apiFrontApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+	.controller('MainCtrl', function () {
+
+		var vm = this;
+
+		vm.menuTemplate = {
+			'url': 'views/menu.html'
+		}
+		
+	});

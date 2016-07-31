@@ -15,10 +15,8 @@ Route::get('/', function(){
 	return view('welcome');
 });
 
-Route::get('/auth_login', 'ApiAuthController@userAuth');
-
 /* El middleware cors, le da permisos a que las rutas puedan 
-*	accedidas de distantas apps
+*	ser accedidas de distantas apps
 */
 Route::group(['middleware' => 'cors'], function() {
 	/* Creamos una ruta recibe 2 parametros:
